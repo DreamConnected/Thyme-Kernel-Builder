@@ -5,7 +5,7 @@
       "repo": "https://github.com/PixelExperience-Devices/kernel_oneplus_sdm845",
       "branch": "thirteen",
       "device": "fajita",
-      "defconfig": "sdm845-perf_defconfig"
+      "defconfig": "enchilada_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
