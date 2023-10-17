@@ -14,6 +14,12 @@
         "branch": "lineage-20.0",
         "name": "gcc",
         "binPath": ["bin"]
+      },
+      {
+        "repo": "https://github.com/Ubuntu-Touch-GalaxyS/gcc-9.3-arm-linux-gnueabihf",
+        "branch": "gcc-9.3",
+        "name": "gcc-32",
+        "binPath": ["bin"]
       }
     ],
     "ccache": true,
