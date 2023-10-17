@@ -16,8 +16,8 @@
         "binPath": ["bin"]
       },
       {
-        "repo": "https://github.com/Ubuntu-Touch-GalaxyS/gcc-9.3-arm-linux-gnueabihf",
-        "branch": "gcc-9.3",
+        "repo": "https://github.com/innfinite4evr/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2",
+        "branch": "master",
         "name": "gcc-32",
         "binPath": ["bin"]
       }
@@ -28,7 +28,7 @@
       "CC": "gcc/bin/aarch64-buildroot-linux-gnu-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "gcc/bin/aarch64-buildroot-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-gnueabihf-",
+        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-eabi-",
         "LD": "gcc/bin/aarch64-buildroot-linux-gnu-ld",
         "AR": "gcc/bin/aarch64-buildroot-linux-gnu-ar",
         "NM": "gcc/bin/aarch64-buildroot-linux-gnu-nm",
