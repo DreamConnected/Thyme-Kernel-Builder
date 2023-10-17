@@ -10,8 +10,7 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/ThankYouMario/android_prebuilts_clang-standalone",
-        "branch": "17",
+        "url": "https://github.com/ZyCromerZ/Clang/releases/download/16.0.6-20231003-release/Clang-16.0.6-20231003.tar.gz",
         "name": "clang",
         "binPath": ["bin"]
       }
