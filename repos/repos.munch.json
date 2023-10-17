@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Xiaomi_SM8250_AllInOne",
-      "repo": "https://github.com/UtsavBalar1231/kernel_xiaomi_sm8250",
-      "branch": "android12-stable",
+      "repo": "https://github.com/LineageOS/android_kernel_xiaomi_sm8250",
+      "branch": "lineage-20",
       "device": "munch",
-      "defconfig": "munch_defconfig"
+      "defconfig": "gki_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
