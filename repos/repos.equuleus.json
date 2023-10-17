@@ -25,7 +25,7 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/aaarch64-buildroot-linux-gnu-gcc",
+      "CC": "gcc/bin/aarch64-buildroot-linux-gnu-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "aarch64-buildroot-linux-gnu-",
         "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-androideabi-",
