@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "Oneplus_SDM845_AllInOne",
-      "repo": "https://github.com/kimocoder/android_kernel_oneplus6",
-      "branch": "development",
+      "repo": "https://github.com/PixelExperience-Devices/kernel_oneplus_sdm845",
+      "branch": "thirteen",
       "device": "fajita",
-      "defconfig": "sdm845_defconfig"
+      "defconfig": "sdm845-perf_defconfig"
     },
     "withKernelSU": true,
     "toolchains": [
