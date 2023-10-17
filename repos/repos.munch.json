@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "Xiaomi_SM8250_AllInOne",
-      "repo": "https://github.com/VoidUI-Devices/kernel_xiaomi_sm8250",
-      "branch": "aosp-13",
+      "repo": "https://github.com/masarou-warehouse/android_kernel_xiaomi_munch",
+      "branch": "scramble",
       "device": "munch",
       "defconfig": "munch_defconfig"
     },
