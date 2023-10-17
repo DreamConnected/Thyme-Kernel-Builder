@@ -25,19 +25,19 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/aarch64-buildroot-linux-gnu-gcc",
+      "CC": "gcc/bin/aarch64-linux-gnu-gcc",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-buildroot-linux-gnu-",
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-eabi-",
-        "LD": "gcc/bin/aarch64-buildroot-linux-gnu-ld",
-        "AR": "gcc/bin/aarch64-buildroot-linux-gnu-ar",
-        "NM": "gcc/bin/aarch64-buildroot-linux-gnu-nm",
-        "OBJCOPY": "gcc/bin/aarch64-buildroot-linux-gnu-objcopy",
-        "OBJDUMP": "gcc/bin/aarch64-buildroot-linux-gnu-objdump",
-        "READELF": "gcc/bin/aarch64-buildroot-linux-gnu-readelf",
-        "OBJSIZE": "gcc/bin/aarch64-buildroot-linux-gnu-size",
-        "STRIP": "gcc/bin/aarch64-buildroot-linux-gnu-strip",
-        "LDGOLD": "gcc/bin/aarch64-buildroot-linux-gnu-ld.gold"
+        "LD": "gcc/bin/aarch64-linux-gnu-ld",
+        "AR": "gcc/bin/aarch64-linux-gnu-ar",
+        "NM": "gcc/bin/aarch64-linux-gnu-nm",
+        "OBJCOPY": "gcc/bin/aarch64-linux-gnu-objcopy",
+        "OBJDUMP": "gcc/bin/aarch64-linux-gnu-objdump",
+        "READELF": "gcc/bin/aarch64-linux-gnu-readelf",
+        "OBJSIZE": "gcc/bin/aarch64-linux-gnu-size",
+        "STRIP": "gcc/bin/aarch64-linux-gnu-strip",
+        "LDGOLD": "gcc/bin/aarch64-linux-gnu-ld.gold"
       }
     },
     "AnyKernel3": {
