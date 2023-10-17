@@ -14,12 +14,6 @@
         "branch": "lineage-20.0",
         "name": "gcc",
         "binPath": ["bin"]
-      },
-      {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
-        "branch": "lineage-19.1",
-        "name": "gcc-32",
-        "binPath": ["bin"]
       }
     ],
     "ccache": true,
@@ -28,7 +22,6 @@
       "CC": "gcc/bin/aarch64-buildroot-linux-gnu-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "aarch64-buildroot-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-androideabi-",
         "LD": "gcc/bin/aarch64-buildroot-linux-gnu-ld",
         "AR": "gcc/bin/aarch64-buildroot-linux-gnu-ar",
         "NM": "gcc/bin/aarch64-buildroot-linux-gnu-nm",
@@ -37,9 +30,7 @@
         "READELF": "gcc/bin/aarch64-buildroot-linux-gnu-readelf",
         "OBJSIZE": "gcc/bin/aarch64-buildroot-linux-gnu-size",
         "STRIP": "gcc/bin/aarch64-buildroot-linux-gnu-strip",
-        "LDGOLD": "gcc/bin/aarch64-buildroot-linux-gnu-ld.gold",
-        "LLVM_AR": "proton-clang/bin/llvm-ar",
-        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+        "LDGOLD": "gcc/bin/aarch64-buildroot-linux-gnu-ld.gold"
       }
     },
     "AnyKernel3": {
