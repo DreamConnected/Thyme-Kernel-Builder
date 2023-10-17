@@ -10,35 +10,30 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
-        "branch": "lineage-20.0",
-        "name": "gcc",
-        "binPath": ["bin"]
-      },
-      {
-        "repo": "https://github.com/innfinite4evr/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2",
-        "branch": "master",
-        "name": "gcc-32",
+        "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
+        "branch": "lineage-20",
+        "name": "clang",
         "binPath": ["bin"]
       }
     ],
-    "ccache": true,
+    "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/aarch64-buildroot-linux-gnu-gcc",
+      "CC": "clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-buildroot-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-eabi-",
-        "LD": "gcc/bin/aarch64-buildroot-linux-gnu-ld",
-        "AR": "gcc/bin/aarch64-buildroot-linux-gnu-ar",
-        "NM": "gcc/bin/aarch64-buildroot-linux-gnu-nm",
-        "OBJCOPY": "gcc/bin/aarch64-buildroot-linux-gnu-objcopy",
-        "OBJDUMP": "gcc/bin/aarch64-buildroot-linux-gnu-objdump",
-        "READELF": "gcc/bin/aarch64-buildroot-linux-gnu-readelf",
-        "OBJSIZE": "gcc/bin/aarch64-buildroot-linux-gnu-size",
-        "STRIP": "gcc/bin/aarch64-buildroot-linux-gnu-strip",
-        "LDGOLD": "gcc/bin/aarch64-buildroot-linux-gnu-ld.gold"
-      }
+        "CROSS_COMPILE": "clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "clang/bin/arm-linux-gnueabi-",
+        "LD": "clang/bin/ld.lld",
+        "AR": "clang/bin/llvm-ar",
+        "NM": "clang/bin/llvm-nm",
+        "OBJCOPY": "clang/bin/llvm-objcopy",
+        "OBJDUMP": "clang/bin/llvm-objdump",
+        "READELF": "clang/bin/llvm-readelf",
+        "OBJSIZE": "clang/bin/llvm-size",
+        "STRIP": "clang/bin/llvm-strip",
+        "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "clang/bin/llvm-ar",
+        "LLVM_DIS": "clang/bin/llvm-dis"
     },
     "AnyKernel3": {
       "use": false,
