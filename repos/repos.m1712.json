@@ -10,7 +10,8 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "url": "https://github.com/ZyCromerZ/Clang/releases/download/18.0.0-20231014-release/Clang-18.0.0-20231014.tar.gz",
+        "repo": "https://gitlab.com/crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r487747c",
+        "branch": "13.0",
         "name": "proton-clang",
         "binPath": ["bin"]
       }
