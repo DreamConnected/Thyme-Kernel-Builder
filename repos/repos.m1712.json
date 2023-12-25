@@ -10,34 +10,30 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
-        "branch": "lineage-20.0",
-        "name": "gcc",
-        "binPath": ["bin"]
-      },
-      {
-        "repo": "https://github.com/innfinite4evr/android-prebuilts-gcc-linux-x86-arm-arm-eabi-7.2",
+        "repo": "https://github.com/kdrag0n/proton-clang",
         "branch": "master",
-        "name": "gcc-32",
+        "name": "proton-clang",
         "binPath": ["bin"]
       }
     ],
-    "ccache": true,
+    "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/aarch64-buildroot-linux-gnu-gcc",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-buildroot-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-eabi-",
-        "LD": "gcc/bin/aarch64-buildroot-linux-gnu-ld",
-        "AR": "gcc/bin/aarch64-buildroot-linux-gnu-ar",
-        "NM": "gcc/bin/aarch64-buildroot-linux-gnu-nm",
-        "OBJCOPY": "gcc/bin/aarch64-buildroot-linux-gnu-objcopy",
-        "OBJDUMP": "gcc/bin/aarch64-buildroot-linux-gnu-objdump",
-        "READELF": "gcc/bin/aarch64-buildroot-linux-gnu-readelf",
-        "OBJSIZE": "gcc/bin/aarch64-buildroot-linux-gnu-size",
-        "STRIP": "gcc/bin/aarch64-buildroot-linux-gnu-strip",
-        "LDGOLD": "gcc/bin/aarch64-buildroot-linux-gnu-ld.gold"
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip",
+        "LDGOLD": "proton-clang/bin/aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
     },
     "AnyKernel3": {
