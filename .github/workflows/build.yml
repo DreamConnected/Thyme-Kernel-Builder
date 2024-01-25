@@ -209,14 +209,19 @@ jobs:
 
 
           wget https://github.com/wu17481748/lxc-docker/releases/download/lxc-docker-2config/LXC-DOCKER-OPEN-CONFIG.sh
-          chmod 777 ./LXC-DOCKER-OPEN-CONFIG.sh
+          chmod 755 ./LXC-DOCKER-OPEN-CONFIG.sh
           ./LXC-DOCKER-OPEN-CONFIG.sh arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }} -w
 
           sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo "# CONFIG_ANDROID_PARANOID_NETWORK is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
+          # Disable Huawei Cgroup
           sed -i '/CONFIG_HW_CGROUP_PIDS=y/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo "# CONFIG_HW_CGROUP_PIDS is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          sed -i '/CONFIG_HW_CGROUP_INFO=y/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo "# CONFIG_HW_CGROUP_INFO is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          sed -i '/CONFIG_HW_CGROUP_WORKINGSET=y/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo "# CONFIG_HW_CGROUP_WORKINGSET is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
           #cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
