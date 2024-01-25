@@ -215,6 +215,9 @@ jobs:
           sed -i '/CONFIG_ANDROID_PARANOID_NETWORK/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
           echo "# CONFIG_ANDROID_PARANOID_NETWORK is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
+          sed -i '/CONFIG_HW_CGROUP_PIDS=y/d' arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+          echo "# CONFIG_HW_CGROUP_PIDS is not set" >> arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
+
           #cat arch/${{ env.arch }}/configs/${{ env.DEFCONFIG_NAME }}
 
           find ./ -name Kconfig -exec dos2unix {} \;
