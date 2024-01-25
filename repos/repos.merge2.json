@@ -10,13 +10,13 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
+        "repo": "https://github.com/Haseo97/aarch64-elf-gcc",
         "branch": "lineage-20.0",
         "name": "gcc",
         "binPath": ["bin"]
       },
       {
-        "repo": "https://github.com/ItsVixano/arm-eabi-9.3.0",
+        "repo": "https://github.com/AndroJr7/arm-linux-gnueabi",
         "branch": "master",
         "name": "gcc-32",
         "binPath": ["bin"]
@@ -27,17 +27,17 @@
       "ARCH": "arm64",
       "CC": "gcc/bin/aarch64-linux-gcc",
       "externalCommand": {
-        "CROSS_COMPILE": "gcc/bin/aarch64-linux-",
-        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-eabi-",
-        "LD": "gcc/bin/aarch64-linux-ld",
-        "AR": "gcc/bin/aarch64-linux-ar",
-        "NM": "gcc/bin/aarch64-linux-nm",
-        "OBJCOPY": "gcc/bin/aarch64-linux-objcopy",
-        "OBJDUMP": "gcc/bin/aarch64-linux-objdump",
-        "READELF": "gcc/bin/aarch64-linux-readelf",
-        "OBJSIZE": "gcc/bin/aarch64-linux-size",
-        "STRIP": "gcc/bin/aarch64-linux-strip",
-        "LDGOLD": "gcc/bin/aarch64-linux-ld.gold",
+        "CROSS_COMPILE": "gcc/bin/aarch64-elf-",
+        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-gnueabi-",
+        "LD": "gcc/bin/aarch64-elf-ld",
+        "AR": "gcc/bin/aarch64-elf-ar",
+        "NM": "gcc/bin/aarch64-elf-nm",
+        "OBJCOPY": "gcc/bin/aarch64-elf-objcopy",
+        "OBJDUMP": "gcc/bin/aarch64-elf-objdump",
+        "READELF": "gcc/bin/aarch64-elf-readelf",
+        "OBJSIZE": "gcc/bin/aarch64-elf-size",
+        "STRIP": "gcc/bin/aarch64-elf-strip",
+        "LDGOLD": "gcc/bin/aarch64-elf-ld.gold",
         "LLVM_AR": "proton-clang/bin/llvm-ar",
         "LLVM_DIS": "proton-clang/bin/llvm-dis"
       }
