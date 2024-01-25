@@ -11,13 +11,13 @@
     "toolchains": [
       {
         "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
-        "branch": "lineage-21.0",
+        "branch": "lineage-20.0",
         "name": "gcc",
         "binPath": ["bin"]
       },
       {
-        "repo": "https://github.com/Ubuntu-Touch-GalaxyS/gcc-9.3-arm-linux-gnueabihf",
-        "branch": "gcc-9.3",
+        "repo": "https://github.com/ItsVixano/arm-eabi-9.3.0",
+        "branch": "master",
         "name": "gcc-32",
         "binPath": ["bin"]
       }
@@ -28,7 +28,7 @@
       "CC": "gcc/bin/aarch64-linux-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "gcc/bin/aarch64-linux-",
-        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-",
+        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-eabi-",
         "LD": "gcc/bin/aarch64-linux-ld",
         "AR": "gcc/bin/aarch64-linux-ar",
         "NM": "gcc/bin/aarch64-linux-nm",
