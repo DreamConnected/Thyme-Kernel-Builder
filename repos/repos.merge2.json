@@ -11,7 +11,7 @@
     "toolchains": [
       {
         "repo": "https://github.com/Haseo97/aarch64-elf-gcc",
-        "branch": "lineage-20.0",
+        "branch": "master",
         "name": "gcc",
         "binPath": ["bin"]
       },
