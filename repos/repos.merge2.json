@@ -25,7 +25,7 @@
     "ccache": true,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc/bin/aarch64-linux-gcc",
+      "CC": "gcc/bin/aarch64-elf-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "gcc/bin/aarch64-elf-",
         "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-gnueabi-",
