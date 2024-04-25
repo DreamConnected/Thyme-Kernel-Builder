@@ -1,0 +1,52 @@
+[
+  {
+    "kernelSource": {
+      "name": "szpb_mt6755_build",
+      "repo": "https://github.com/Vgdn1942/android_kernel_mt6755_3.18.119",
+      "branch": "main",
+      "device": "szpb",
+      "defconfig": "k55v1_64_bsp_defconfig"
+    },
+    "withKernelSU": false,
+    "toolchains": [
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+        "branch": "lineage-19.1",
+        "name": "gcc",
+        "binPath": ["bin"]
+      },
+      {
+        "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+        "branch": "lineage-19.1",
+        "name": "gcc-32",
+        "binPath": ["bin"]
+      }
+    ],
+    "ccache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "gcc/bin/aarch64-linux-android-gcc",
+      "externalCommand": {
+        "CROSS_COMPILE": "gcc/bin/aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "gcc-32/bin/arm-linux-androideabi-",
+        "LD": "gcc/bin/aarch64-linux-android-ld",
+        "AR": "gcc/bin/aarch64-linux-android-ar",
+        "NM": "gcc/bin/aarch64-linux-android-nm",
+        "OBJCOPY": "gcc/bin/aarch64-linux-android-objcopy",
+        "OBJDUMP": "gcc/bin/aarch64-linux-android-objdump",
+        "READELF": "gcc/bin/aarch64-linux-android-readelf",
+        "OBJSIZE": "gcc/bin/aarch64-linux-android-size",
+        "STRIP": "gcc/bin/aarch64-linux-android-strip",
+        "LDGOLD": "gcc/bin/aarch64-linux-android-ld.gold",
+        "LLVM_AR": "proton-clang/bin/llvm-ar",
+        "LLVM_DIS": "proton-clang/bin/llvm-dis"
+      }
+    },
+    "AnyKernel3": {
+      "use": false,
+      "release": false,
+      "repo": "https://github.com/easterNday/AnyKernel3/",
+      "branch": "thyme"
+    }
+  }
+]
