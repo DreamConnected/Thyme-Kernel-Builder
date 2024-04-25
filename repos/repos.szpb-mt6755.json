@@ -3,7 +3,7 @@
     "kernelSource": {
       "name": "szpb_mt6755_build",
       "repo": "https://github.com/Vgdn1942/android_kernel_mt6755_3.18.119",
-      "branch": "main",
+      "branch": "master",
       "device": "szpb",
       "defconfig": "k55v1_64_bsp_defconfig"
     },
