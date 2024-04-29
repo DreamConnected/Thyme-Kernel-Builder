@@ -1,4 +1,4 @@
-name: "Build kernels"
+name: "Build kernels for Linux 3.x.x"
 
 env:
   OUT_DIR: "${{ github.workspace }}/out"
