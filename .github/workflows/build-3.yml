@@ -60,7 +60,7 @@ jobs:
           sudo apt-get install -y build-essential bc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev libfl-dev
           sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python2 python2-dev
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar dos2unix
-          sudo pip install ConfigParser ChipObj
+          sudo pip install ConfigParser 
 
       - name: "🚄 Create cache key from `repos`"
         if: ${{ env.ccache == 'true' }}
