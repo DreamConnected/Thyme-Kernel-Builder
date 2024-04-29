@@ -2,10 +2,10 @@
   {
     "kernelSource": {
       "name": "szpb_mt6755_build",
-      "repo": "https://github.com/DreamConnected/android_kernel_mt6755_3.18.119",
+      "repo": "https://github.com/DreamConnected/gemini-android-kernel-3.18-android8",
       "branch": "master",
       "device": "szpb",
-      "defconfig": "k55v1_64_bsp_defconfig"
+      "defconfig": "k50v1_64_defconfig"
     },
     "withKernelSU": false,
     "toolchains": [
